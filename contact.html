@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/4406745.webp" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Tailwind</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/4406745.webp" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Tailwind</title>
 </head>
+
 <body>
 
-    <header class="flex items-center justify-between">
+  <header class="flex items-center justify-between">
 
     <div>
       <img src="./images/4406745.webp" class="h-30 p-4" alt="">
@@ -24,16 +22,16 @@
 
     <nav class="">
       <span><a href="./index.html"
-          class="mr-4 ml-6 rounded-md p-2 hover:bg-black hover:text-white transition-all duration-500">Home</a></span>
+          class="mr-4 ml-6 rounded-md p-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500">Home</a></span>
       <span><a href="./about.html"
-          class="mr-4 rounded-md p-2 hover:bg-black hover:text-white transition-all duration-500">About</a></span>
+          class="mr-4 rounded-md p-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500">About</a></span>
       <span><a href="./feature.html"
-          class="mr-4 rounded-md p-2 hover:bg-black hover:text-white transition-all duration-500">Features</a></span>
+          class="mr-4 rounded-md p-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500">Features</a></span>
       <span><a href="#"
-          class="mr-4 rounded-md p-2 hover:bg-black hover:text-white transition-all duration-500">Contact
+          class="mr-4 rounded-md p-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500">Contact
           Us</a></span>
     </nav>
-    
+
     <div>
       <span><a href="#"
           class="mr-4 ml-6 hover:bg-black hover:text-white transition-all duration-500 rounded-md p-2">Sign
@@ -44,7 +42,51 @@
 
   </header>
 
-  <footer class=" m-10 ">
+  <form class="m-8 flex items-center justify-between">
+
+    <div class="flex flex-col items-center justify-center mb-8 mr-8 ml-0 mt-0">
+
+      <label for="Name">
+
+      <input type="text" required value="" placeholder="Enter Your Name"
+        class="border-b-1 w-100 mb-8  outline-none border-b-gray-200 hover:border-b-black focus:border-b-black   ">
+
+    </label>
+
+    <label for="email">
+
+      <input type="email" required value="" placeholder="Enter Your Email"
+        class="border-b-1 w-100 mb-8 outline-none border-b-gray-200 hover:border-b-black focus:border-b-black border-b-black ">
+
+    </label>
+
+    <label for="password">
+
+      <input type="password" required value="" placeholder="Enter Your Password"
+        class="border-b-1 w-100 mb-8 outline-none border-b-gray-200 hover:border-b-black focus:border-b-black border-b-black ">
+
+    </label>
+
+    <textarea name="text" placeholder="Enter Your Feedback and Problem" class="border-1 border-gray-200 outline-none hover:border-black focus:border-black border-black p-2 mb-4 w-100" id="" cols="30" rows="10"></textarea>
+
+    <div>
+
+    <button type="submit" class="capitalize mr-4 rounded-md p-2 border-1 w-20 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500">submit</button>
+  
+    <button type="reset" class="capitalize mr-4 rounded-md p-2 border-1 w-20 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500">reset</button>
+
+    </div>
+    
+  </div>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924237.7098362652!2d66.49594966940124!3d25.192983639780632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1749548736826!5m2!1sen!2s"
+      width="650" height="450" style="border:0;" class="mb-8 mr-8 ml-0 mt-0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </form>
+
+   <footer class=" m-10 ">
 
    <h4 class="text-2xl text-center transition-all duration-500 font-bold text-black mb-4">About Us</h4>
    <p class="text-center text-gray-600 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempora tempore perspiciatis? 
@@ -61,6 +103,7 @@
      <p class="text-center text-gray-600 text-lg m-4 capitalize">Made With <i class="fa-solid fa-heart fa text-red-600"></i> by fast Performance</p>
 
      </footer>
-    
+     
 </body>
+
 </html>
