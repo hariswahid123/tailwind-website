@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/4406745.webp" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Tailwind - Sign Up</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+  <header class="flex flex-col md:flex-row items-center justify-between p-4 gap-4 md:gap-0 w-full max-w-7xl mx-auto">
+    <div>
+      <img src="./images/4406745.webp" class="h-16 md:h-24" alt="">
+    </div>
+    <nav class="flex flex-row flex-wrap items-center justify-center gap-2 text-center w-full md:w-auto">
+      <span><a href="./index.html" class="rounded-md px-3 py-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500 font-medium">Home</a></span>
+      <span><a href="./about.html" class="rounded-md px-3 py-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500 font-medium">About</a></span>
+      <span><a href="./feature.html" class="rounded-md px-3 py-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500 font-medium">Features</a></span>
+      <span><a href="contact.html" class="rounded-md px-3 py-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500 font-medium">Contact Us</a></span>
+    </nav>
+    <div class="flex flex-row items-center justify-center gap-2 text-center w-full md:w-auto">
+      <span><a href="#" class="hover:scale-110 capitalize bg-black text-white transition-all duration-500 rounded-md px-3 py-2 font-medium">Sign up</a></span>
+      <span><a href="./signin.html" class="hover:scale-110 capitalize hover:bg-black hover:text-white transition-all duration-500 rounded-md px-3 py-2 font-medium">sign in</a></span>
+    </div>
+  </header>
+
+  <main class="flex-grow flex items-center justify-center w-full p-4">
+    <div class="w-full max-w-md bg-white border border-gray-200 rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-center mb-6">Create an Account</h2>
+      <p id="error-message" class="text-red-500 text-sm mb-4 text-center"></p>
+      
+      <form id="signup-form" class="flex flex-col gap-4">
+        <label for="name" class="w-full">
+          <span class="block text-sm font-medium text-gray-700 mb-1">Full Name</span>
+          <input type="text" id="name" required placeholder="John Doe"
+            class="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-black focus:ring-1 focus:ring-black transition-all">
+        </label>
+
+        <label for="email" class="w-full">
+          <span class="block text-sm font-medium text-gray-700 mb-1">Email Address</span>
+          <input type="email" id="email" required placeholder="john@example.com"
+            class="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-black focus:ring-1 focus:ring-black transition-all">
+        </label>
+
+        <label for="password" class="w-full">
+          <span class="block text-sm font-medium text-gray-700 mb-1">Password</span>
+          <input type="password" id="password" required placeholder="********"
+            class="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-black focus:ring-1 focus:ring-black transition-all">
+          <p class="text-xs text-gray-500 mt-1">Must be 8+ chars with uppercase, lowercase, number, and special character.</p>
+        </label>
+
+        <label for="confirm-password" class="w-full">
+          <span class="block text-sm font-medium text-gray-700 mb-1">Confirm Password</span>
+          <input type="password" id="confirm-password" required placeholder="********"
+            class="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-black focus:ring-1 focus:ring-black transition-all">
+        </label>
+
+        <button type="submit" class="w-full bg-black text-white rounded-md p-3 font-bold hover:scale-105 transition-all duration-300 mt-2">Sign Up</button>
+      </form>
+
+      <p class="text-center text-sm text-gray-600 mt-6">Already have an account? <a href="./signin.html" class="text-black font-bold hover:underline">Sign In</a></p>
+    </div>
+  </main>
+
+  <footer class="w-full p-6 md:p-10 border-t mt-8">
+    <h4 class="text-2xl text-center transition-all duration-500 font-bold text-black mb-4">About Us</h4>
+    <p class="text-center text-gray-600 text-lg max-w-3xl mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempora tempore perspiciatis? 
+    Tenetur inventore odit cumque maxime at deserunt modi,
+    architecto commodi quos debitis!</p>
+
+    <div class="flex flex-row items-center justify-center m-6 gap-6">
+    <i class="fa-brands fa-facebook fa-xl text-blue-600 hover:scale-110 cursor-pointer transition-all"></i>
+    <i class="fa-brands fa-instagram fa-xl text-orange-600 hover:scale-110 cursor-pointer transition-all"></i>
+    <i class="fa-brands fa-twitter fa-xl text-blue-400 hover:scale-110 cursor-pointer transition-all"></i>
+    <i class="fa-brands fa-linkedin fa-xl text-blue-600 hover:scale-110 cursor-pointer transition-all"></i>
+    </div>
+    <p class="text-center text-gray-600 text-lg m-4 capitalize">Made With <i class="fa-solid fa-heart fa text-red-600 mx-1"></i> by fast Performance</p>
+  </footer>
+
+  <script src="./auth.js"></script>
+</body>
+</html>
