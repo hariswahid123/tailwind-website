@@ -16,39 +16,39 @@
 </head>
 <body>
 
-    <header class="flex items-center justify-between">
+  <header class="flex flex-col md:flex-row items-center justify-between p-4 gap-4 md:gap-0 w-full max-w-7xl mx-auto">
 
     <div>
-      <img src="./images/4406745.webp" class="h-30 p-4" alt="">
+      <img src="./images/4406745.webp" class="h-16 md:h-24" alt="">
     </div>
 
-    <nav class="">
+    <nav class="flex flex-row flex-wrap items-center justify-center gap-2 text-center w-full md:w-auto">
       <span><a href="./index.html"
-          class="mr-4 ml-6 rounded-md p-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500">Home</a></span>
+          class="rounded-md px-3 py-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500 font-medium">Home</a></span>
       <span><a href="#"
-          class="mr-4 rounded-md p-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500">About</a></span>
+          class="rounded-md px-3 py-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500 font-medium">About</a></span>
       <span><a href="./feature.html"
-          class="mr-4 rounded-md p-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500">Features</a></span>
+          class="rounded-md px-3 py-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500 font-medium">Features</a></span>
       <span><a href="contact.html"
-          class="mr-4 rounded-md p-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500">Contact
+          class="rounded-md px-3 py-2 hover:scale-110 hover:bg-black hover:text-white transition-all duration-500 font-medium">Contact
           Us</a></span>
     </nav>
 
-    <div>
+    <div class="flex flex-row items-center justify-center gap-2 text-center w-full md:w-auto">
       <span><a href="#"
-          class="mr-4 ml-6 hover:bg-black hover:text-white transition-all duration-500 rounded-md p-2">Sign
+          class="hover:scale-110 capitalize hover:bg-black hover:text-white transition-all duration-500 rounded-md px-3 py-2 font-medium">Sign
           up</a></span>
-      <span><a href="#" class="mr-4 hover:bg-black hover:text-white transition-all duration-500 rounded-md p-2">sign
+      <span><a href="#" class="hover:scale-110 capitalize hover:bg-black hover:text-white transition-all duration-500 rounded-md px-3 py-2 font-medium">sign
           in</a></span>
     </div>
 
   </header>
 
-  <section class="flex items-center justify-center">
-      <div class="  p-15 ">
+  <section class="flex items-center justify-center w-full">
+      <div class="p-8 md:p-15 w-full max-w-4xl flex flex-col items-center">
         <h1 class="text-4xl text-center transition-all duration-500 hover:scale-110 font-bold text-gray-800 mb-4">About
           Tailwind</h1>
-        <p class=" w-100 text-center text-gray-600 text-lg">
+        <p class="w-full text-center text-gray-600 text-lg md:px-10">
           Tailwind CSS aik utility-first CSS framework hai jo tumhain rapid UI development mein madad deta hai.
           Is mein har cheez ke liye chhoti chhoti classes hoti hain jaise padding, margin, color, etc.,
           jinko tum directly HTML mein use kar sakte ho bina custom CSS likhnay ke.
@@ -56,46 +56,46 @@
       </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center">
+    <section class="flex flex-col items-center justify-center w-full px-4">
 
-      <h1 class="text-4xl transition-all duration-500 hover:scale-110 font-bold m-5">Testimonial</h1>
+      <h1 class="text-4xl transition-all duration-500 hover:scale-110 font-bold m-5 text-center">Testimonial</h1>
 
-      <div class="flex items-center justify-between">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
 
-        <div class="w-100 rounded-lg transition-all duration-500 hover:scale-105 h-64 m-4 bg-black p-4">
+        <div class="w-full rounded-lg transition-all duration-500 hover:scale-105 bg-black p-6 flex flex-col justify-center">
 
-          <div class=" flex flex-col items-center justify-center">
-            <img src="./images/people 1.avif" class="w-22 m-2 h-25 rounded-full" alt="">
+          <div class="flex flex-col items-center justify-center">
+            <img src="./images/people 1.avif" class="w-24 h-24 object-cover m-2 rounded-full" alt="">
           </div>
 
-          <h1 class="text-white text-2xl text-center capitalize font-bold">jack smith</h1>
-          <p class="text-white text-center ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+          <h1 class="text-white text-2xl text-center capitalize font-bold mt-2">jack smith</h1>
+          <p class="text-white text-center mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
             necessitatibus id at modi facilis impedit
             fugit Lorem ipsum dolor sit amet.</p>
 
         </div>
 
-        <div class="w-100 rounded-lg transition-all duration-500 hover:scale-105 h-64 m-4 bg-black p-4">
+        <div class="w-full rounded-lg transition-all duration-500 hover:scale-105 bg-black p-6 flex flex-col justify-center">
 
-          <div class=" flex flex-col items-center justify-center">
-            <img src="./images/people 2.avif" class="w-22 m-2 h-25 rounded-full" alt="">
+          <div class="flex flex-col items-center justify-center">
+            <img src="./images/people 2.avif" class="w-24 h-24 object-cover m-2 rounded-full" alt="">
           </div>
 
-          <h1 class="text-white text-2xl text-center capitalize font-bold">charles etoroma</h1>
-          <p class="text-white text-center ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+          <h1 class="text-white text-2xl text-center capitalize font-bold mt-2">charles etoroma</h1>
+          <p class="text-white text-center mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
             necessitatibus id at modi facilis impedit
             fugit Lorem ipsum dolor sit amet.</p>
 
         </div>
 
-        <div class="w-100 rounded-lg transition-all duration-500 hover:scale-105 h-64 m-4 bg-black p-4">
+        <div class="w-full rounded-lg transition-all duration-500 hover:scale-105 bg-black p-6 flex flex-col justify-center">
 
-          <div class=" flex flex-col items-center justify-center">
-            <img src="./images/people 3.avif" class="w-22 m-2 h-25 rounded-full" alt="">
+          <div class="flex flex-col items-center justify-center">
+            <img src="./images/people 3.avif" class="w-24 h-24 object-cover m-2 rounded-full" alt="">
           </div>
 
-          <h1 class="text-white text-2xl text-center capitalize font-bold">brooke cagle</h1>
-          <p class="text-white text-center ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+          <h1 class="text-white text-2xl text-center capitalize font-bold mt-2">brooke cagle</h1>
+          <p class="text-white text-center mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
             necessitatibus id at modi facilis impedit
             fugit Lorem ipsum dolor sit amet.</p>
 
@@ -105,21 +105,21 @@
 
     </section>
 
-  <footer class=" m-10 ">
+  <footer class="w-full p-6 md:p-10 border-t mt-8">
 
-   <h4 class="text-2xl text-center transition-all duration-500 font-bold text-black mb-4">About Us</h4>
-   <p class="text-center text-gray-600 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempora tempore perspiciatis? 
-    Tenetur <br>inventore odit cumque maxime at deserunt modi,
-    architecto commodi quos debitis!</p>
+       <h4 class="text-2xl text-center transition-all duration-500 font-bold text-black mb-4">About Us</h4>
+       <p class="text-center text-gray-600 text-lg max-w-3xl mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempora tempore perspiciatis? 
+        Tenetur inventore odit cumque maxime at deserunt modi,
+        architecto commodi quos debitis!</p>
 
-     <div class="flex flex-row items-center justify-center m-4">
-      <i class="fa-brands fa-facebook fa text-blue-600 mr-4"></i>
-      <i class="fa-brands fa-instagram fa text-orange-600 mr-4"></i>
-      <i class="fa-brands fa-twitter fa text-blue-400 mr-4"></i>
-      <i class="fa-brands fa-linkedin fa text-blue-600 mr-4"></i>
-     </div>
+       <div class="flex flex-row items-center justify-center m-6 gap-6">
+        <i class="fa-brands fa-facebook fa-xl text-blue-600 hover:scale-110 cursor-pointer transition-all"></i>
+        <i class="fa-brands fa-instagram fa-xl text-orange-600 hover:scale-110 cursor-pointer transition-all"></i>
+        <i class="fa-brands fa-twitter fa-xl text-blue-400 hover:scale-110 cursor-pointer transition-all"></i>
+        <i class="fa-brands fa-linkedin fa-xl text-blue-600 hover:scale-110 cursor-pointer transition-all"></i>
+       </div>
 
-     <p class="text-center text-gray-600 text-lg m-4 capitalize">Made With <i class="fa-solid fa-heart fa text-red-600"></i> by fast Performance</p>
+       <p class="text-center text-gray-600 text-lg m-4 capitalize">Made With <i class="fa-solid fa-heart fa text-red-600 mx-1"></i> by fast Performance</p>
 
      </footer>
     
